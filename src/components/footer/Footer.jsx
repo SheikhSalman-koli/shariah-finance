@@ -24,7 +24,7 @@ export default function Footer() {
 const currentPath = usePathname();
 
   return (
-    <footer className="sticky bottom-0 w-full max-w-xl mx-auto bg-white border-t border-gray-200 shadow-2xl z-20">
+    <footer className="sticky bottom-0 w-full max-w-xl mx-auto bg-white border-t border-gray-200 z-20">
       <nav className="flex justify-around items-center h-16">
         
         {/* Correctly passing the string path to linkTo */}

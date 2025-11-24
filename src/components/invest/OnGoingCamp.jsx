@@ -1,8 +1,5 @@
 'use client'
 
-
-
-
 import { ArrowRight, Clock, MinusCircle, PlusCircle } from 'lucide-react'
 import Image from 'next/image'
 import React, { useState } from 'react'

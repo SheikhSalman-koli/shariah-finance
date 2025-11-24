@@ -20,9 +20,20 @@ export default function Support() {
 
     return (
         <div className='hover:text-indigo-600'>
-            {
+            <button 
+                  onClick={handleChat}
+                  title={pathName === '/' ? '' : 'Support'}
+                  className="flex gap-1.5 items-center text-sm font-medium text-gray-600 hover:text-indigo-600">
+                <MessageSquare className={`h-4 w-4 `} />
+                {
+                    pathName === '/' ? <span>Support</span> : null
+                }
+            </button>
+            {/* {
                 pathName === '/' ?
-                  <button className="flex gap-1.5 items-center text-sm font-medium text-gray-600 hover:text-indigo-600">
+                  <button 
+                  onClick={handleChat}
+                  className="flex gap-1.5 items-center text-sm font-medium text-gray-600 hover:text-indigo-600">
                 <MessageSquare className={`h-4 w-4 `} />
                 Support
             </button>
@@ -35,7 +46,7 @@ export default function Support() {
                 className={`h-4 w-4 `} />
             </button>
             }
-          
+           */}
         </div>
     )
 }
