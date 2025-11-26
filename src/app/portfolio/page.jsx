@@ -1,29 +1,33 @@
-'use client'
+
 
 import SearchInput from '@/src/components/portfolio/SearchInput'
 import Tabs from '@/src/components/portfolio/Tabs';
+import CampaignCard from '@/src/components/shared/CampaignCard';
 import { Clock } from 'lucide-react';
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function PortfoloiPage() {
+export default async function PortfoloiPage() {
 
-    const filteredCampaigns = []
+    const email = "redwan@gmail.com"
+
+    const res = await fetch('http://localhost:3000/campaigns.json')
+    const data = await res.json()
+    const myCampaigns = data.filter(camp => camp.email === email);
+  
 
     return (
         <div className='w-full max-w-xl mx-auto space-y-8'>
             <SearchInput />
 
-            <Tabs />
-
+            
             {/* Content Area */}
-            <div className=" px-4">
-                {filteredCampaigns.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {filteredCampaigns.map(campaign => (
-                            <div key={campaign.id} campaign={campaign} />
-                        ))}
-                    </div>
+            <div className="">
+                {myCampaigns.length > 0 ? (
+                    <Tabs 
+                    myCampaigns={myCampaigns}
+                    />
+
                 ) : (
                     <div className="min-h-screen mt-4 p-10 bg-white rounded-xl mb-4 border border-gray-200 text-center">
                         <Clock className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
