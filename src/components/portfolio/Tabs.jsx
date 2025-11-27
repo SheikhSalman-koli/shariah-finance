@@ -14,7 +14,7 @@ export default function Tabs({ myCampaigns }) {
     let filtered = myCampaigns || [];
 
     if (activeTab === 'Ongoing') {
-       filtered=  filtered.filter(camp => camp.status === 'ongoing')
+       filtered = filtered.filter(camp => camp.status === 'ongoing')
     } else if (activeTab === 'Completed') {
        filtered = filtered.filter(camp => camp.status === 'completed')
     }

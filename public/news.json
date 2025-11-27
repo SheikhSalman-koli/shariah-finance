@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Dhaka Startup Raises $3M for AI-Finance Platform",
+        "image": "/invest1.webp",
+        "description": "A rising Bangladeshi fintech startup has successfully raised $3 million in seed funding to expand its AI-driven investment and analytics platform. The round was led by multiple regional venture capital firms who believe the startup’s proprietary machine learning models can significantly change how retail investors approach portfolio building. The company plans to use the funding to hire data scientists, expand infrastructure, and integrate automated risk assessment tools for small investors. According to the founders, the goal is to make advanced investment insights accessible to everyone, not just professionals.",
+        "category": "Investment",
+        "publishedAt": "2025-01-04"
+    },
+    {
+        "id": 2,
+        "title": "Global Stocks Recover as Investors Regain Confidence",
+        "image": "/investmeet1.jpeg",
+        "description": "After several weeks of market uncertainty, global stock markets showed a strong recovery as investors reacted positively to new economic data and optimistic earnings reports. Analysts say the rebound has been fueled by improving inflation numbers, stronger consumer spending, and renewed confidence in the technology and manufacturing sectors. Major indices like the S&P 500 and Nikkei 225 reported noticeable gains. Experts caution, however, that investors should still monitor global events, as geopolitical tensions and currency fluctuations may continue to influence market volatility in the coming months.",
+        "category": "Stock Market",
+        "publishedAt": "2025-01-03"
+    },
+    {
+        "id": 3,
+        "title": "Bangladesh Agro Sector Shows Record Growth in 2024",
+        "image": "/invest3.jpeg",
+        "description": "Bangladesh’s agricultural sector experienced robust growth in 2024, driven by a rising demand for organic produce and increased adoption of smart irrigation technologies. Farmers across the country are shifting toward sustainable farming practices, which has not only improved yield but also reduced long-term environmental impact. Government initiatives supporting modern farming equipment, training programs, and microfinancing have also contributed significantly. Experts predict that if the current trend continues, Bangladesh could become a major player in the South Asian organic food export market within the next few years.",
+        "category": "Economy",
+        "publishedAt": "2025-01-02"
+    },
+    {
+        "id": 4,
+        "title": "Tech Giants Invest Heavily in Renewable Energy Projects",
+        "image": "/investmeet3.jpg",
+        "description": "Several global technology companies announced major investments in renewable energy this year, including solar farms, wind turbines, and energy-storage systems. These companies aim to reduce their carbon footprint and meet sustainability targets ahead of international climate deadlines. Industry analysts say that this shift not only benefits the environment but also contributes to long-term cost reductions for large data centers. As energy consumption rises due to AI and cloud computing demand, renewable solutions are becoming essential for maintaining operational efficiency and ensuring long-term sustainability.",
+        "category": "Sustainability",
+        "publishedAt": "2025-01-01"
+    },
+    {
+        "id": 5,
+        "title": "Local SMEs See Boost from Digital Payment Adoption",
+        "image": "/invest2.webp",
+        "description": "Small and medium enterprises (SMEs) in Bangladesh have experienced noticeable growth following the widespread adoption of digital payment systems. Entrepreneurs report that customer transactions have become faster, more transparent, and easier to track. With mobile wallets, QR payments, and online banking becoming mainstream, SMEs have improved cash flow management and increased sales efficiency. Financial experts believe this digital transition is helping rural businesses expand access to broader markets and reduce dependency on cash-based transactions, ultimately boosting financial inclusion across the country.",
+        "category": "Business",
+        "publishedAt": "2025-01-01"
+    }
+]

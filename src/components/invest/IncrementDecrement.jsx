@@ -15,10 +15,10 @@ export default function IncrementDecrement() {
                 {/* decrement */}
                 <button
                     disabled={amount === 5}
-                    onClick={() => setAmount(amount - 10)}
+                    onClick={() => setAmount(amount - 5)}
                     className={`flex justify-center items-center gap-2 rounded-3xl text-white px-3 py-1 hover:bg-indigo-700 ${amount === 5 ? 'cursor-not-allowed bg-indigo-300' : 'bg-indigo-600'} `}>
                     <MinusCircle size={15} />
-                    10K
+                    5K
                 </button>
                 {/* shower button */}
                 <button className='rounded-full border-2 border-indigo-600 bg-indigo-50 text-indigo-700 font-extrabold text-xl shadow-inner'>
@@ -26,10 +26,10 @@ export default function IncrementDecrement() {
                 </button>
                 {/* increment */}
                 <button
-                    onClick={() => setAmount(amount + 10)}
+                    onClick={() => setAmount(amount + 5)}
                     className='flex justify-center items-center gap-2 rounded-3xl bg-indigo-600 text-white px-3 py-1 hover:bg-indigo-700'>
                     <PlusCircle size={15} />
-                    10K
+                    5K
                 </button>
             </div>
 

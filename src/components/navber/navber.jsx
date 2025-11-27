@@ -5,6 +5,7 @@ import HomePageNav from './HomePageNav'
 import { usePathname } from 'next/navigation'
 import InvestNav from './InvestNav'
 import PortfolioNav from './PortfolioNav'
+import InboxNav from './InboxNav'
 
 export default function Navber() {
 
@@ -20,6 +21,9 @@ export default function Navber() {
 
         {/* invest navber */}
         {pathName === '/portfolio' && <PortfolioNav />}
+
+        {/* news navber */}
+        {pathName === '/inbox' && <InboxNav />}
       </header>
   )
 }
