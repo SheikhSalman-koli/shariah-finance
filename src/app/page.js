@@ -4,7 +4,9 @@ import {ChevronRight, Facebook, HelpCircle, Star, TrendingUp} from 'lucide-react
 import FirstTime from '../components/home/FirstTime';
 import TopBanner from '../components/home/TopBanner';
 import VideoBanner from '../components/home/VideoBanner';
-import ActionLink from '../components/shared/ActionLink';
+import ActionLink from '../components/shared/FaceBookLink';
+import ModalButton from '../components/shared/ModalButton';
+import CommonAction from '../components/shared/CommonAction';
 
 
 export default function Home() {
@@ -29,28 +31,8 @@ export default function Home() {
           </button>
         </div>
 
-        {/*  Explore Campaigns Section with Action Button Group --- */}
-        <div className="space-y-3">
-          <ActionLink 
-            icon={Star} 
-            title="Leave us a Review" 
-            href="/review-page" 
-            iconColor="text-yellow-500"
-          />
-          <ActionLink 
-            icon={HelpCircle} 
-            title="Ask a Question" 
-            href="/faq-support" 
-            iconColor="text-indigo-500"
-          />
-          <ActionLink 
-            icon={Facebook} 
-            title="facebook.com/sharia.io" 
-            href="https://www.facebook.com/sharia.io" 
-            external={true}
-            iconColor="text-blue-600"
-          />
-        </div>
+         {/* review, ask a question, faceBook link */}
+        <CommonAction />
         
       </main>
   );
