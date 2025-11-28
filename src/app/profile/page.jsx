@@ -1,28 +1,24 @@
 'use client'
 
-import AskQuestion from '@/src/components/profile/AskQuestion';
 import LanguageSelect from '@/src/components/profile/LanguageSelect';
-import LeaveReview from '@/src/components/profile/LeaveReview';
 import PersonalDetailsForm from '@/src/components/profile/PersonalDetailsForm';
 import SecuritySettings from '@/src/components/profile/SecuritySettings';
 import CommonAction from '@/src/components/shared/CommonAction';
-import ActionLink from '@/src/components/shared/FaceBookLink';
 import Modal from '@/src/components/shared/Modal';
 import ModalButton from '@/src/components/shared/ModalButton';
-import { Facebook, HelpCircle, Star, ChevronRight, User, Languages, Lock } from 'lucide-react';
+import { User, Languages, Lock } from 'lucide-react';
 import React, { useState } from 'react'
 
 export default function ProfilePage() {
 
     const [modalType, setModalType] = useState(null);
 
-    console.log(modalType);
+    // console.log(modalType);
 
     return (
         <div
             className='max-w-xl mx-auto p-4'
         >
-
             <div className=" space-y-4">
 
                 <ModalButton
@@ -60,6 +56,7 @@ export default function ProfilePage() {
                 <Modal
                     isOpen={modalType}
                     onClose={() => setModalType(null)}
+                    modalType={modalType}
                     title={
                         modalType === "personal"
                             ? "Update Personal Details"
@@ -73,8 +70,6 @@ export default function ProfilePage() {
                     {modalType === "personal" && <PersonalDetailsForm />}
                     {modalType === "language" && <LanguageSelect />}
                     {modalType === "security" && <SecuritySettings />}
-                    {/* {modalType === "review" && <LeaveReview />}
-                    {modalType === "askQuestion" && <AskQuestion />} */}
                 </Modal>
 
             </div>

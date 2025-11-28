@@ -2,17 +2,17 @@
 
 import SearchInput from '@/src/components/portfolio/SearchInput'
 import Tabs from '@/src/components/portfolio/Tabs';
-import CampaignCard from '@/src/components/shared/CampaignCard';
 import { Clock } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react'
+import data from '../../data/campaigns.json'
 
 export default async function PortfoloiPage() {
 
     const email = "redwan@gmail.com"
 
-    const res = await fetch('http://localhost:3000/campaigns.json')
-    const data = await res.json()
+    // const res = await fetch('http://localhost:3000/campaigns.json')
+    // const data = await res.json()
     const myCampaigns = data.filter(camp => camp.email === email);
   
 
@@ -20,7 +20,7 @@ export default async function PortfoloiPage() {
         <div className='w-full max-w-xl mx-auto space-y-8'>
             <SearchInput />
 
-            
+
             {/* Content Area */}
             <div className="">
                 {myCampaigns.length > 0 ? (

@@ -1,12 +1,12 @@
 import NewsCard from '@/src/components/inbox/NewsCard';
 import React from 'react'
-
+import news from '../../data/news.json'
 
 export default async function InboxPage() {
 
-    const res = await fetch('http://localhost:3000/news.json', { cache: 'no-store' })
+    // const res = await fetch('http://localhost:3000/news.json', { cache: 'no-store' })
 
-    const news = await res.json()
+    // const news = await res.json()
     // const news = []
     // console.log(news)   
 

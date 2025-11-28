@@ -1,12 +1,11 @@
 
 import React from 'react'
-import {ChevronRight, Facebook, HelpCircle, Star, TrendingUp} from 'lucide-react';
-import FirstTime from '../components/home/FirstTime';
+import { TrendingUp} from 'lucide-react';
+
+import FirstTime from '@/src/components/home/FirstTime';
+import CommonAction from '../components/shared/CommonAction';
 import TopBanner from '../components/home/TopBanner';
 import VideoBanner from '../components/home/VideoBanner';
-import ActionLink from '../components/shared/FaceBookLink';
-import ModalButton from '../components/shared/ModalButton';
-import CommonAction from '../components/shared/CommonAction';
 
 
 export default function Home() {

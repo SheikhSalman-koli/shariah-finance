@@ -29,24 +29,6 @@ export default function Support() {
                     pathName === '/' ? <span>Support</span> : null
                 }
             </button>
-            {/* {
-                pathName === '/' ?
-                  <button 
-                  onClick={handleChat}
-                  className="flex gap-1.5 items-center text-sm font-medium text-gray-600 hover:text-indigo-600">
-                <MessageSquare className={`h-4 w-4 `} />
-                Support
-            </button>
-             :
-               <button 
-               onClick={handleChat}
-               title='Support'
-               className="flex gap-1.5 items-center text-sm font-medium text-gray-600 hover:text-indigo-600">
-                <MessageSquare 
-                className={`h-4 w-4 `} />
-            </button>
-            }
-           */}
         </div>
     )
 }
